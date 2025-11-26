@@ -157,6 +157,35 @@ body {
   transform: translateY(0);
 }
 
+<section id="experience" class="section fade">
+  <h3>Experience</h3>
+
+  <div class="exp-card">
+    <h4>Cognizant — Reverse Engineer</h4>
+    <p class="exp-date">May 2024 – Present • Bangalore, India</p>
+    <p class="exp-desc">Focused on reverse engineering, binary analysis, and security research.</p>
+  </div>
+
+  <div class="exp-card">
+    <h4>Rockwell Automation — Security Operations Lead</h4>
+    <p class="exp-date">3 Years</p>
+    <ul class="exp-list">
+      <li>Penetration Testing</li>
+      <li>Vulnerability Assessment</li>
+      <li>Security Operations Leadership</li>
+      <li>Awards: Star of the Month, Best Innovator</li>
+    </ul>
+  </div>
+
+  <div class="exp-card">
+    <h4>Knowledge Lens — Software Engineer / Intern</h4>
+    <p class="exp-date">Apr 2021 – Jun 2024 • 3 years 3 months</p>
+    <p class="exp-desc">Worked across security engineering, automation, and product R&D.</p>
+  </div>
+
+</section>
+
+
 /* ===== Footer ===== */
 footer {
   text-align: center;
