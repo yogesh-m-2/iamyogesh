@@ -4,119 +4,282 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yogesh Mallidi — Cybersecurity Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav class="navbar">
-    <div class="nav-logo">Yogesh</div>
-    <ul class="nav-links">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<canvas id="matrix-canvas"></canvas>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
 
-  <!-- HERO -->
-  <header id="hero" class="hero fade">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1 class="glitch">Yogesh Mallidi</h1>
-      <h2>Hacker • Penetration Tester • Malware Analyst • Reverse Engineer • SecOps Engineer</h2>
-      <p>Cybersecurity Engineer skilled in offensive & defensive security, malware analysis, and large-scale SecOps.</p>
-      <a href="#about" class="btn">Explore</a>
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">YM<span>_</span></div>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-status">
+    <div class="status-dot"></div>
+    AVAILABLE FOR HIRE
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-orb orb1"></div>
+  <div class="hero-orb orb2"></div>
+  <div class="hero-content">
+    <div class="hero-tag">// CYBERSECURITY ENGINEER</div>
+    <h1 class="hero-name">
+      <span class="line1">YOGESH</span>
+      <span class="line2">
+        <span class="glitch-wrap" data-text="MALLIDI">MALLIDI</span>
+      </span>
+    </h1>
+    <div class="hero-roles">
+      <span class="role-tag">HACKER</span>
+      <span class="role-tag">PENETRATION TESTER</span>
+      <span class="role-tag">MALWARE ANALYST</span>
+      <span class="role-tag">REVERSE ENGINEER</span>
+      <span class="role-tag">SECOPS ENGINEER</span>
     </div>
-  </header>
-
-  <!-- ABOUT -->
-  <section id="about" class="section fade">
-    <h3>About Me</h3>
-    <p>
-      Cybersecurity Engineer, Penetration Tester, and Malware Analyst with strong experience in 
-      Web Application Security, Android Application Security, and Reverse Engineering. 
-      Skilled in DAST/SAST tooling, networking, scripting, and threat analysis.
-      Awards include Star of the Month & Best Innovator.
-      Enthusiast of CTF challenges, pentesting tool development, and continuous learning in the security domain.
+    <p class="hero-desc">
+      Cybersecurity Engineer skilled in offensive &amp; defensive security, malware analysis,
+      and large-scale SecOps — protecting systems one exploit at a time.
     </p>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience" class="section fade">
-  <h3>Experience</h3>
-
-  <div class="exp-card">
-    <h4>Cognizant — Reverse Engineer</h4>
-    <p class="exp-date">May 2024 – Present • Bangalore, India</p>
-    <p class="exp-desc">Focused on reverse engineering, binary analysis, and security research.</p>
+    <div class="hero-cta">
+      <a href="#experience" class="btn-primary">View Experience</a>
+      <a href="#contact" class="btn-secondary">Get In Touch</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num" data-target="6">0</span>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-target="3">0</span>
+        <span class="stat-label">Companies</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-target="2">0</span>
+        <span class="stat-label">Certifications</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-target="10">0</span>
+        <span class="stat-label">Core Skills</span>
+      </div>
+    </div>
   </div>
-
-  <div class="exp-card">
-    <h4>Rockwell Automation — Security Operations Lead</h4>
-    <p class="exp-date">3 Years</p>
-    <ul class="exp-list">
-      <li>Penetration Testing</li>
-      <li>Vulnerability Assessment</li>
-      <li>Security Operations Leadership</li>
-      <li>Awards: Star of the Month, Best Innovator</li>
-    </ul>
+  <div class="scroll-hint">
+    <span>SCROLL</span>
+    <div class="scroll-line"></div>
   </div>
-
-  <div class="exp-card">
-    <h4>Knowledge Lens — Software Engineer / Intern</h4>
-    <p class="exp-date">Apr 2021 – Jun 2024 • 3 years 3 months</p>
-    <p class="exp-desc">Worked across security engineering, automation, and product R&D.</p>
-  </div>
-
 </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="section fade">
-    <h3>Core Skills</h3>
-
-    <div class="skills-grid">
-      <div class="skill-card">Penetration Testing</div>
-      <div class="skill-card">Malware Analysis</div>
-      <div class="skill-card">Reverse Engineering</div>
-      <div class="skill-card">DAST / SAST Tools</div>
-      <div class="skill-card">Network Security</div>
-      <div class="skill-card">Security Automation</div>
-      <div class="skill-card">Incident Response</div>
-      <div class="skill-card">OllyDbg</div>
-      <div class="skill-card">IDA Pro</div>
-      <div class="skill-card">x64 Debugging</div>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="section-header reveal">
+    <span class="section-num">01 /</span>
+    <h2 class="section-title">ABOUT</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="about-grid">
+    <div class="about-visual reveal">
+      <div class="about-hexagon">
+        <div class="about-ring"></div>
+        <div class="about-hexagon-inner">
+          <span class="about-icon">🛡️</span>
+        </div>
+      </div>
     </div>
-  </section>
+    <div class="about-text reveal">
+      <p>Cybersecurity Engineer, Penetration Tester, and Malware Analyst with strong experience in Web Application Security, Android Application Security, and Reverse Engineering.</p>
+      <p>Skilled in DAST/SAST tooling, networking, scripting, and threat analysis. Enthusiast of CTF challenges, pentesting tool development, and continuous learning in the security domain.</p>
+      <div class="about-badges">
+        <span class="badge">Star of the Month</span>
+        <span class="badge">Best Innovator</span>
+        <span class="badge">CEH Certified</span>
+        <span class="badge">Android Security Expert</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- EDUCATION -->
-  <section id="education" class="section fade">
-    <h3>Education</h3>
-    <p><strong>Cambridge Institute of Technology</strong></p>
-    <p>B.E. — Computer Science (2017–2021)</p>
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <div class="section-header reveal">
+    <span class="section-num">02 /</span>
+    <h2 class="section-title">EXPERIENCE</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="exp-card">
+        <div class="exp-header">
+          <div>
+            <div class="exp-company">Cognizant</div>
+            <div class="exp-role">Reverse Engineer</div>
+          </div>
+          <div class="exp-meta">
+            <div class="exp-date">MAY 2024 — PRESENT</div>
+            <div class="exp-badge">● ACTIVE</div>
+          </div>
+        </div>
+        <p class="exp-desc">Focused on reverse engineering, binary analysis, and security research. Working deep in the stack — dissecting malware, analyzing binaries, and uncovering vulnerabilities others miss.</p>
+        <ul class="exp-bullets">
+          <li>Binary Analysis</li>
+          <li>Security Research</li>
+          <li>Reverse Engineering</li>
+          <li>Bangalore, India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot green"></div>
+      <div class="exp-card">
+        <div class="exp-header">
+          <div>
+            <div class="exp-company">Rockwell Automation</div>
+            <div class="exp-role">Security Operations Lead</div>
+          </div>
+          <div class="exp-meta">
+            <div class="exp-date">3 YEARS</div>
+          </div>
+        </div>
+        <p class="exp-desc">Led security operations across a large industrial automation ecosystem. Drove penetration testing programs, vulnerability assessments, and cross-team security initiatives.</p>
+        <ul class="exp-bullets">
+          <li>Penetration Testing</li>
+          <li>Vulnerability Assessment</li>
+          <li>Security Operations Leadership</li>
+          <li class="award">★ Star of the Month</li>
+          <li class="award">★ Best Innovator</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="exp-card">
+        <div class="exp-header">
+          <div>
+            <div class="exp-company">Knowledge Lens</div>
+            <div class="exp-role">Software Engineer / Security Intern</div>
+          </div>
+          <div class="exp-meta">
+            <div class="exp-date">APR 2021 — JUN 2024</div>
+            <div style="font-family:'Share Tech Mono',monospace;font-size:0.65rem;color:var(--dim);margin-top:4px;">3 YRS 3 MOS</div>
+          </div>
+        </div>
+        <p class="exp-desc">Worked across security engineering, automation, and product R&amp;D. Foundational years building deep expertise in security tooling and engineering practices.</p>
+        <ul class="exp-bullets">
+          <li>Security Engineering</li>
+          <li>Automation</li>
+          <li>Product R&amp;D</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <h3 style="margin-top:40px;">Certifications</h3>
-    <ul style="margin-top:15px;">
-      <li>Certified Ethical Hacker (CEH)</li>
-      <li>Android Application Security Expert (CAASE)</li>
-    </ul>
-  </section>
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="section-header reveal">
+    <span class="section-num">03 /</span>
+    <h2 class="section-title">SKILLS</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="skills-container">
+    <div class="skill-card reveal" data-level="95"><span class="skill-icon">🎯</span><div class="skill-name">Penetration Testing</div><div class="skill-bar"><div class="skill-fill"></div></div><div class="skill-level">EXPERT</div><div class="skill-corner"></div></div>
+    <div class="skill-card reveal" data-level="92"><span class="skill-icon">🦠</span><div class="skill-name">Malware Analysis</div><div class="skill-bar"><div class="skill-fill"></div></div><div class="skill-level">EXPERT</div><div class="skill-corner"></div></div>
+    <div class="skill-card reveal" data-level="90"><span class="skill-icon">⚙️</span><div class="skill-name">Reverse Engineering</div><div class="skill-bar"><div class="skill-fill"></div></div><div class="skill-level">EXPERT</div><div class="skill-corner"></div></div>
+    <div class="skill-card reveal" data-level="88"><span class="skill-icon">🔍</span><div class="skill-name">DAST / SAST Tools</div><div class="skill-bar"><div class="skill-fill"></div></div><div class="skill-level">ADVANCED</div><div class="skill-corner"></div></div>
+    <div class="skill-card reveal" data-level="85"><span class="skill-icon">🌐</span><div class="skill-name">Network Security</div><div class="skill-bar"><div class="skill-fill"></div></div><div class="skill-level">ADVANCED</div><div class="skill-corner"></div></div>
+    <div class="skill-card reveal" data-level="82"><span class="skill-icon">🤖</span><div class="skill-name">Security Automation</div><div class="skill-bar"><div class="skill-fill"></div></div><div class="skill-level">ADVANCED</div><div class="skill-corner"></div></div>
+    <div class="skill-card reveal" data-level="88"><span class="skill-icon">🚨</span><div class="skill-name">Incident Response</div><div class="skill-bar"><div class="skill-fill"></div></div><div class="skill-level">ADVANCED</div><div class="skill-corner"></div></div>
+    <div class="skill-card reveal" data-level="90"><span class="skill-icon">🐛</span><div class="skill-name">OllyDbg</div><div class="skill-bar"><div class="skill-fill"></div></div><div class="skill-level">EXPERT</div><div class="skill-corner"></div></div>
+    <div class="skill-card reveal" data-level="90"><span class="skill-icon">🔧</span><div class="skill-name">IDA Pro</div><div class="skill-bar"><div class="skill-fill"></div></div><div class="skill-level">EXPERT</div><div class="skill-corner"></div></div>
+    <div class="skill-card reveal" data-level="87"><span class="skill-icon">💻</span><div class="skill-name">x64 Debugging</div><div class="skill-bar"><div class="skill-fill"></div></div><div class="skill-level">ADVANCED</div><div class="skill-corner"></div></div>
+  </div>
+</section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section fade">
-    <h3>Contact</h3>
-    <p>Email: <a href="mailto:yogesh.17cs187@cambridge.edu.in">yogesh.17cs187@cambridge.edu.in</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/yogesh-mallidi-69a30b171/">linkedin.com/in/yogesh-mallidi-69a30b171</a></p>
-    <p>Location: Bengaluru, Karnataka, India</p>
-  </section>
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <div class="section-header reveal">
+    <span class="section-num">04 /</span>
+    <h2 class="section-title">EDUCATION</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="edu-grid">
+    <div class="edu-card reveal">
+      <div class="edu-card-label">// DEGREE</div>
+      <div class="edu-inst">Cambridge Institute of Technology</div>
+      <div class="edu-degree">B.E. — Computer Science Engineering</div>
+      <div class="edu-year">2017 — 2021</div>
+    </div>
+    <div class="edu-card reveal">
+      <div class="edu-card-label">// CERTIFICATIONS</div>
+      <ul class="cert-list">
+        <li><div class="cert-badge"></div>Certified Ethical Hacker (CEH)</li>
+        <li><div class="cert-badge"></div>Android App Security Expert (CAASE)</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2025 Yogesh Mallidi — Cybersecurity Engineer</p>
-  </footer>
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="section-header reveal">
+    <span class="section-num">05 /</span>
+    <h2 class="section-title">CONTACT</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-text reveal">
+      <h2>Let's Build <span>Secure</span> Systems Together</h2>
+      <p>Open to security engineering roles, penetration testing engagements, and collaborative security research. Based in Bengaluru, Karnataka, India.</p>
+    </div>
+    <div class="contact-links reveal">
+      <a href="mailto:yogesh.17cs187@cambridge.edu.in" class="contact-link">
+        <span class="contact-link-icon">📧</span>
+        <div>
+          <div class="contact-link-label">EMAIL</div>
+          <div class="contact-link-value">yogesh.17cs187@cambridge.edu.in</div>
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/yogesh-mallidi-69a30b171/" target="_blank" class="contact-link">
+        <span class="contact-link-icon">🔗</span>
+        <div>
+          <div class="contact-link-label">LINKEDIN</div>
+          <div class="contact-link-value">linkedin.com/in/yogesh-mallidi</div>
+        </div>
+      </a>
+      <a href="#" class="contact-link">
+        <span class="contact-link-icon">📍</span>
+        <div>
+          <div class="contact-link-label">LOCATION</div>
+          <div class="contact-link-value">Bengaluru, Karnataka, India</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 YOGESH MALLIDI — CYBERSECURITY ENGINEER</p>
+  <div class="footer-status">
+    <div class="status-dot"></div>
+    ALL SYSTEMS SECURE
+  </div>
+</footer>
 
 <script src="script.js"></script>
 </body>
 </html>
-
