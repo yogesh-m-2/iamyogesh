@@ -251,12 +251,12 @@ nav {
 }
 .glitch-wrap::before {
   color: var(--red);
-  animation: glitch1 1s infinite;
+  animation: glitch1 2s infinite;
   clip-path: polygon(0 0, 100% 0, 100% 40%, 0 40%);
 }
 .glitch-wrap::after {
   color: var(--green);
-  animation: glitch2 1s infinite;
+  animation: glitch2 2s infinite;
   clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
 }
 @keyframes glitch1 {
